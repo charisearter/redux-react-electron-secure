@@ -81,7 +81,7 @@ ipcMain.on('fork', e => {
 
 	p.send('hello');
 	p.on('message', m => {
-		e.reply('data', 'l[ipc-main-fork] ' + m);
-		console.log(`Message:\n ${d}`);
+		e.reply('data', '[ipc-main-fork] ' + m);
+		console.log(`Message:\n ${m}`);
 	});
 });
